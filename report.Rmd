@@ -1,0 +1,56 @@
+---
+title: Three sets of random numbers
+author: You
+output: html_document
+---
+
+```{r, here-i-am, include = FALSE}
+here::i_am(
+  "report.Rmd"
+)
+```
+
+```{r, load-random-numbers, include = FALSE}
+#! TO DO: 
+#!   read random_numbers1 from output directory
+random_numbers1 <- readRDS(
+  here::here("output/random_numbers1.rds")
+)
+#! TO DO: 
+#!   read random_numbers2 from output directory
+random_numbers2 <- readRDS(
+  here::here("output/random_numbers2.rds")
+)
+#! TO DO: 
+#!   read random_numbers3 from output directory
+random_numbers3 <- readRDS(
+  here::here("output/random_numbers3.rds")
+)
+```
+
+# A scatter plot
+
+```{r, random-numbers1-histogram}
+#| fig.cap = "Scatter plot of random numbers",
+#| echo = FALSE
+random_numbers3_quantiles <- quantile(
+  random_numbers3, 
+  seq(0, 1, length = 5)
+)
+random_numbers3_breaks <- as.numeric(
+  cut(
+    random_numbers3, 
+    breaks = random_numbers3_quantiles,
+    include.lowest = TRUE
+  )
+)
+
+colors <- 1:4
+
+point_color <- colors[random_numbers3_breaks]
+plot(
+  x = random_numbers1, y = random_numbers2,
+  col = point_color,
+  bty = "n", pch = 19
+)
+```
