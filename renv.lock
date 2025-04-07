@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.4.2",
+    "Version": "4.4.1",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -30,7 +30,24 @@
       "NeedsCompilation": "no",
       "Author": "Winston Chang [aut, cre]",
       "Maintainer": "Winston Chang <winston@stdout.org>",
-      "Repository": "RSPM",
+      "Repository": "CRAN"
+    },
+    "RColorBrewer": {
+      "Package": "RColorBrewer",
+      "Version": "1.1-3",
+      "Source": "Repository",
+      "Date": "2022-04-03",
+      "Title": "ColorBrewer Palettes",
+      "Authors@R": "c(person(given = \"Erich\", family = \"Neuwirth\", role = c(\"aut\", \"cre\"), email = \"erich.neuwirth@univie.ac.at\"))",
+      "Author": "Erich Neuwirth [aut, cre]",
+      "Maintainer": "Erich Neuwirth <erich.neuwirth@univie.ac.at>",
+      "Depends": [
+        "R (>= 2.0.0)"
+      ],
+      "Description": "Provides color schemes for maps (and other graphics) designed by Cynthia Brewer as described at http://colorbrewer2.org.",
+      "License": "Apache License 2.0",
+      "NeedsCompilation": "no",
+      "Repository": "CRAN",
       "Encoding": "UTF-8"
     },
     "base64enc": {
@@ -50,8 +67,7 @@
       "License": "GPL-2 | GPL-3",
       "URL": "http://www.rforge.net/base64enc",
       "NeedsCompilation": "yes",
-      "Repository": "RSPM",
-      "Encoding": "UTF-8"
+      "Repository": "CRAN"
     },
     "bslib": {
       "Package": "bslib",
@@ -979,31 +995,6 @@
       "Maintainer": "Yihui Xie <xie@yihui.name>",
       "Repository": "CRAN"
     },
-    "wesanderson": {
-      "Package": "wesanderson",
-      "Version": "0.3.7",
-      "Source": "Repository",
-      "Title": "A Wes Anderson Palette Generator",
-      "Description": "Palettes generated mostly from 'Wes Anderson' movies.",
-      "Date": "2023-10-30",
-      "Authors@R": "c(person(\"Karthik\", \"Ram\", role = c(\"aut\", \"cre\"), email = \"karthik.ram@gmail.com\", comment = c(ORCID = \"0000-0002-0233-1757\")), person(\"Hadley\", \"Wickham\", role = \"aut\", email = \"h.wickham@gmail.com\"), person(\"Clark\", \"Richards\", role = \"ctb\", email = \"crichards@whoi.edu\"), person(\"Aaron\", \"Baggett\", role = \"ctb\", email = \"aaronbaggett@gmail.com\"))",
-      "Depends": [
-        "R (>= 3.0)"
-      ],
-      "License": "MIT + file LICENSE",
-      "LazyData": "true",
-      "Suggests": [
-        "ggplot2"
-      ],
-      "URL": "https://github.com/karthik/wesanderson",
-      "BugReports": "https://github.com/karthik/wesanderson/issues",
-      "RoxygenNote": "7.2.3",
-      "NeedsCompilation": "no",
-      "Author": "Karthik Ram [aut, cre] (<https://orcid.org/0000-0002-0233-1757>), Hadley Wickham [aut], Clark Richards [ctb], Aaron Baggett [ctb]",
-      "Maintainer": "Karthik Ram <karthik.ram@gmail.com>",
-      "Repository": "CRAN",
-      "Encoding": "UTF-8"
-    },
     "xfun": {
       "Package": "xfun",
       "Version": "0.47",
@@ -1071,8 +1062,7 @@
       "URL": "https://github.com/vubiostat/r-yaml/",
       "BugReports": "https://github.com/vubiostat/r-yaml/issues",
       "NeedsCompilation": "yes",
-      "Repository": "RSPM",
-      "Encoding": "UTF-8"
+      "Repository": "CRAN"
     }
   }
 }

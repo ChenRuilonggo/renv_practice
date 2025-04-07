@@ -45,7 +45,7 @@ random_numbers3_breaks <- as.numeric(
   )
 )
 
-colors <- wesanderson::wes_palette("Zissou1", 4)
+colors <- RColorBrewer::brewer.pal(4, "Set1")
 
 point_color <- colors[random_numbers3_breaks]
 plot(
